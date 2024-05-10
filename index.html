@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Color de fondo */
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 100px); /* Altura del contenedor menos la altura del encabezado */
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+        .button {
+            width: 80%; /* Ancho del botón */
+            max-width: 200px; /* Ancho máximo */
+            height: 50px; /* Altura del botón */
+            margin: 10px auto;
+            background-color: #f44336; /* Rojo */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px; /* Tamaño de la fuente */
+            text-align: center;
+            line-height: 50px; /* Altura de línea vertical */
+            text-decoration: none; /* Quita la subrayado de enlace */
+            display: inline-block; /* Hace que el botón se comporte como bloque en línea */
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="title">Horario</h1>
+</div>
+
+<div class="container">
+    <p>Selecciona un bloque:</p>
+    <a href="bloque_sa.html" class="button">Bloque SA</a>
+    <a href="bloque_sb.html" class="button">Bloque SB</a>
+    <a href="bloque_sc.html" class="button">Bloque SC</a>
+    <a href="bloque_sd.html" class="button">Bloque SD</a>
+    <a href="bloque_sf.html" class="button">Bloque SF</a>
+</div>
+
+</body>
+</html>

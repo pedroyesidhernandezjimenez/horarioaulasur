@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Salas de Clase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            max-width: 100%;
+            overflow-x: auto;
+            text-align: center; /* Centra los elementos del contenedor */
+        }
+        .btn {
+            display: inline-block;
+            width: calc(25% - 10px); /* Calcula el ancho de cada botón con espacio entre ellos */
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #f44336; /* Rojo */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border: 2px solid #000;
+        }
+        th, td {
+            padding: 6px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        th {
+            background-color: #f44336; /* Rojo */
+            color: white;
+            font-weight: bold;
+        }
+        td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Horario de Salas de Clase</h1>
+    
+    <!-- Botones para seleccionar la sala -->
+    <div>
+        <button class="btn" onclick="showTable('sb401')">SB401</button>
+        <button class="btn" onclick="showTable('sb402')">SB402</button>
+        <button class="btn" onclick="showTable('sb403')">SB403</button>
+        <button class="btn" onclick="showTable('sb404')">SB404</button>
+
+    </div>
+ 
+    <!-- Tabla para la sala SB401 -->
+    <table id="sb401" style="display: none;">
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <!-- Horas de 6:00 a 22:00 -->
+        <!-- Se puede expandir este esquema para incluir más horas -->
+        <!-- De lunes a viernes -->
+        <tr><td>06:00</td><td>CONSTITUCION<br>Profesor Alvaro Salamanca</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>07:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>08:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>09:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- Tabla para la sala SB402 -->
+    <table id="sb402" style="display: none;">
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <!-- Horas de 6:00 a 22:00 -->
+        <!-- Se puede expandir este esquema para incluir más horas -->
+        <!-- De lunes a viernes -->
+        <tr><td>06:00</td><td>CONSTITUCION<br>Profesor Alvaro Salamanca</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>07:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>08:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>09:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- Tabla para la sala SB403 -->
+    <table id="sb403" style="display: none;">
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <!-- Horas de 6:00 a 22:00 -->
+        <!-- Se puede expandir este esquema para incluir más horas -->
+        <!-- De lunes a viernes -->
+        <tr><td>06:00</td><td>CONSTITUCION<br>Profesor Alvaro Salamanca</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>07:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>08:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>09:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    
+    <!-- Tabla para la sala SB404 -->
+    <table id="sb404" style="display: none;">
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <!-- Horas de 6:00 a 22:00 -->
+        <!-- Se puede expandir este esquema para incluir más horas -->
+        <!-- De lunes a viernes -->
+        <tr><td>06:00</td><td>CONSTITUCION<br>Profesor Alvaro Salamanca</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>07:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>08:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>09:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    
+
+    <script>
+        function showTable(tableId) {
+            // Oculta todas las tablas
+            var tables = document.querySelectorAll('table');
+            tables.forEach(function(table) {
+                table.style.display = 'none';
+            });
+
+            // Muestra la tabla seleccionada
+            var selectedTable = document.getElementById(tableId);
+            if (selectedTable) {
+                selectedTable.style.display = 'table';
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>
+
+
